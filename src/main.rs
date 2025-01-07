@@ -1,5 +1,5 @@
 use dotenv::dotenv;
-use raydium_snipe_bot::{
+use raydium_pump_snipe_bot::{
     common::{
         logger::Logger,
         utils::{
