@@ -21,23 +21,23 @@ Introducing the **Solana Ultra-Fast New Token Sniper** written in **Rust** 🦀,
 ```
 src/
 ├── core/
-│   ├── swap.rs        # Token swap(buy/sell) functionalities in different DEXs
-│   ├── token.rs       # Token definitions and handling
-│   └── tx.rs          # Transaction handling
+│   ├── token.rs        # Token definitions and handling
+│   └── tx.rs        # Transaction handling
 | 
 ├── engine/
-│   └── monitor.rs     # New token monitoring across DEXs
+│   ├── swap.rs        # Token swap(buy/sell) functionalities in some dex
+│   └── monitor.rs        # New token monitoring in some dex
 |
 ├── dex/
-│   ├── pump_fun.rs    # Pump.fun DEX functionalities
-│   └── raydium.rs     # Raydium DEX functionalities
+│   ├── pump_fun.rs        # Pump.fun dex
+│   └── raydium.rs        # Raydium dex
 │
 ├── services/
 │   └── jito.rs        # Jito service provides ultra-fast transaction confirmation
 |
 ├── common/
-│   ├── logger.rs      # Logs to be clean and convenient for monitoring
-│   └── utils.rs       # Utility functions used across the project
+│   ├── logger.rs        # Logs to be clean and convenient to monitor.
+│   └── utils.rs        # Utility functions used across the project
 │
 ├── lib.rs
 └── main.rs
