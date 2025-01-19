@@ -7,7 +7,7 @@ use raydium_pump_snipe_bot::{
             AppState,
         },
     },
-    engine::monitor::{pump_fun_monitoring_buy_sell, raydium_monitoring_buy_sell},
+    engine::monitor::{pumpfun_monitor, raydium_monitor},
     services::jito,
 };
 use solana_sdk::signer::Signer;
@@ -38,6 +38,6 @@ async fn main() {
         "Successfully Set the environment variables.\n\t\t\t\t [Web Socket RPC]: {},\n\t\t\t\t [Wallet]: {:?},\n\t\t\t\t [Slippage]: {}\n", 
         rpc_wss, wallet_cloned.pubkey(), slippage
     ));
-    // raydium_monitoring_buy_sell(&rpc_wss, state, slippage, use_jito).await;
-    pump_fun_monitoring_buy_sell(&rpc_wss, state, slippage, use_jito).await;
+    // raydium_monitor(&rpc_wss, state, slippage, use_jito).await;
+    pumpfun_monitor(&rpc_wss, state, slippage, use_jito).await;
 }
