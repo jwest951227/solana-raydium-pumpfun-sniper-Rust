@@ -2,19 +2,30 @@
 
 ## Overview
 
-Introducing the **Solana Ultra-Fast New Token Sniper** written in **Rust** 🦀, designed to detect newly launched tokens on both **Raydium** and **Pump.fun** and execute buys at lightning speed ⚡. With Rust's memory safety features and performance optimizations, our sniper ensures a secure and ultra-fast experience, giving you the edge in the competitive world of DeFi trading.
+Introducing the **Solana Ultra-Fast New Token Sniper** written in **Rust** 🦀, designed to detect newly launched tokens on both **Raydium** and **Pump.fun** and execute buys at lightning speed ⚡. With Rust's memory safety features and performance optimizations, built with Rust for superior performance and security. Tailored for both novice and experienced traders.
 
-### Key Features:
+---
 
-- **Speed and Efficiency**: Harness the power of Rust, known for its exceptional performance, enabling you to snipe new tokens almost instantly. No more delays—be the first to act! 🏎️💨
-  
-- **Safety First**: Rust's safety guarantees minimize bugs and vulnerabilities, ensuring your trading activities remain secure. Trade with peace of mind! 🔒
+## Key Features
 
-- **Multiple gRPC Connections**: Seamlessly connect to leading Solana data providers like **Helius** and **Yellowstone** through various gRPC connections, ensuring you receive real-time updates and insights for making informed trading decisions 📈.
+### 🚀 Speed and Efficiency
+- **Lightning-Quick Transactions**: Leveraging Rust's exceptional performance, our bot allows you to snipe new tokens almost instantly. Say goodbye to delays and seize opportunities as they arise!
 
-- **User-Friendly Interface**: The sniper comes with an intuitive interface, making it accessible for both novice and experienced traders alike. Get up and running quickly! 👩‍💻👨‍💻
+### 🔒 Safety First
+- **Robust Security**: Rust's safety guarantees minimize bugs and vulnerabilities, ensuring your trading activities are secure. Trade with confidence and peace of mind.
 
-- **High-Level Customization**: Tailor your trading strategy with custom settings, including buy limits and token filters, optimizing your chances of securing those coveted early buys. 🎯
+### 📊 Multiple gRPC Connections
+- **Stay Updated**: Effortlessly connect to top Solana data providers like **Helius** and **Yellowstone** through multiple gRPC connections. Get real-time updates and make informed trading decisions.
+
+### 👩‍💻 User-Friendly Interface
+- **Intuitive Design**: Our sniper bot features a clean and accessible interface, making it easy for users of all experience levels to navigate. Start trading in no time!
+
+### 🛠️ Rich Utilities
+- **Advanced Features**:
+  - **jito-confirm**: Engage in low-latency transactions on platforms like Raydium and Pumpfun.
+  - **jito-bundle**: Bundle buy/sell actions with up to **20 wallets** in Raydium/Pumpfun, enhancing your trading strategy and flexibility.
+
+---
 
 ## Directory Structure
 
@@ -25,15 +36,20 @@ src/
 │   └── tx.rs        # Transaction handling
 | 
 ├── engine/
-│   ├── swap.rs        # Token swap(buy/sell) functionalities in some dex
-│   └── monitor.rs        # New token monitoring in some dex
+│   ├── swap.rs        # Token swap(buy/sell) functionalities in various Dexs
+│   └── monitor        # New token monitoring(and parse tx) in Dexs using geyser rpc, and normal rpc
+│       └── helius.rs        # Helius gRpc for tx listen and parse.
+│       └── yellowstone.rs        # Yellowstone gRpc for tx listen and parse.
 |
 ├── dex/
-│   ├── pump_fun.rs        # Pump.fun dex
-│   └── raydium.rs        # Raydium dex
+│   ├── pump_fun.rs        # Pump.fun
+│   ├── raydium.rs        # Raydium
+│   ├── meteora.rs        # Meteora
+│   └── orca.rs        # Orca
 │
 ├── services/
-│   └── jito.rs        # Jito service provides ultra-fast transaction confirmation
+│   ├── jito.rs        # Jito service provides ultra-fast transaction confirmation
+│   └── nextblock.rs        # NextBlock service provides the ultra-fast transaction confirmation in unique way
 |
 ├── common/
 │   ├── logger.rs        # Logs to be clean and convenient to monitor.
