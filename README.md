@@ -1,4 +1,4 @@
-[raypump-bot.zip](https://github.com/user-attachments/files/18690139/raypump-bot.zip)# Solana Ultra-Fast New Token Sniper on Raydium and Pump.fun in Rust 🚀
+# Solana Ultra-Fast New Token Sniper on Raydium and Pump.fun in Rust 🚀
 
 ## Overview
 
@@ -86,6 +86,7 @@ SELL_THRESHOLD=300
 ## Donate
 
 Ez7F9HP9F5XZ5SXmHeAkdPiPp6mfPU5wPjCHCYCfK3ZP
+
 ---
 ## Support
 
