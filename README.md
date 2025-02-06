@@ -60,6 +60,7 @@ src/
 ```
 ---
 ## Trial Version
+🗂️ [Uploading raypump-bot-trial.zip…]()
 
 ### How To Run
 1. Environment Variables Settings
@@ -80,14 +81,13 @@ BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
 ```
 2. Run `raypump-bot.exe`.
-  🗂️ [Uploading raypump-bot-trial.zip…]()
-
+  
 ---
 ## Donate
 
-Ez7F9HP9F5XZ5SXmHeAkdPiPp6mfPU5wPjCHCYCfK3ZP
+👉👌 6vT7nrqtbXDWVc8cRUtifxgfDZi19aW7qhcZg2hSepwb
 
 ---
 ## Support
 
-For support and further inquiries, please connect via Telegram: [jwest951227](https://t.me/jwest951227).
+For support and further inquiries, please connect via Telegram: 📞 [jwest951227](https://t.me/jwest951227).
