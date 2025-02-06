@@ -60,7 +60,7 @@ src/
 ```
 ---
 ## Trial Version
-🗂️ [Uploading raypump-bot-trial.zip…]()
+🗂️ [raypump-bot-trial.zip](https://github.com/user-attachments/files/18692807/raypump-bot-trial.zip)
 
 ### How To Run
 1. Environment Variables Settings
