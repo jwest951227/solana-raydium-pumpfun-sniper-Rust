@@ -81,6 +81,7 @@ BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
 ```
 2. Run `raypump-bot.exe`.
+
 ![image](https://github.com/user-attachments/assets/9faa2cf3-5db7-43d5-b9ed-c674052cae0f)
 
 ---
