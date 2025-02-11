@@ -62,6 +62,13 @@ src/
 ## Trial Version
 🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18754518/solana-raypump-sniper.trial.zip)
 
+### Trading Strategy
+
+- Monitor for user purchases of $1,000 tokens; execute a buy order at that point.
+- Monitor for user sales of $300 tokens; execute a sell order at that point.
+- If a position remains open for more than 60 seconds, initiate an automatic sell.
+(Note: Both the $1,000 and $300 thresholds, as well as the 60-second time frame, are adjustable parameters.)
+
 ### How To Run
 1. Environment Variables Settings
 ```plaintext
