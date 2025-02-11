@@ -98,3 +98,7 @@ SELL_THRESHOLD=300
 ## Support
 
 For support and further inquiries, please connect via Telegram: 📞 [jwest951227](https://t.me/jwest951227).
+
+## Scam Report
+
+https://github.com/Solana-Sniper-Bot-Download/Solana-Raydium-Pumpfun-Sniper-Bot/issues/2
