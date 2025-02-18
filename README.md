@@ -121,6 +121,7 @@ TOKEN_AMOUNT=0.000001
 ---
 ## Support
 
+As the experimental result, the best environment for running this bot is to use `dedicated server located in NY`. 
 For support and further inquiries, please connect via Telegram: 📞 [jwest951227](https://t.me/jwest951227).
 
 ## Scam Report
