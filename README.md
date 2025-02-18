@@ -60,22 +60,33 @@ src/
 ```
 ---
 ## Trial Versions
-### Trading Strategies
+
+### 1. **Solana RayPump Sniper (Executioner Trial)**  
 > 🗂️ [solana-raypump-sniper(executioner-trial).zip](https://github.com/user-attachments/files/18854180/solana-raypump-sniper.executioner-trial.zip)
 
-1. Monitor for user purchases of $1,000 tokens; execute a buy order at that point.
-2. Monitor for user sales of $300 tokens; execute a sell order at that point.
-3. If a position remains open for more than 60 seconds, initiate an automatic sell.
-(Note: Both the $1,000 and $300 thresholds, as well as the 60-second time frame, are adjustable parameters.)
+**Strategy Details:**
+- **Entry Trigger:** Monitor user purchases of tokens valued at $1,000; execute a buy order upon detection.
+- **Exit Trigger:** Monitor user sales of tokens valued at $300; execute a sell order upon detection.
+- **Time Limitation:** If a position remains open for more than 60 seconds, initiate an automatic sell.  
+*(Note: The $1,000 and $300 purchase/sale thresholds, as well as the 60-second time limit, are adjustable parameters via environment settings.)*
 
+---
+
+### 2. **Solana RayPump Sniper (Qwert Trial)**  
 > 🗂️ [solana-raypump-sniper(qwert-trial).zip](https://github.com/user-attachments/files/18854181/solana-raypump-sniper.qwert-trial.zip)
 
-1.  **Entry:**  Enter a position based on your position.
-2.  **Time Limit:** A time limit of 3-5 minutes is set after entering a position. During this time, monitor the volume and the number of transactions.
-3.  **Exit - Time-Based (3 Minute Exit):** If the volume does not increase after 3 minutes, sell.
-4.  **Exit - Growth Activated:** If volume growth begins, the time-based rule is disabled.
-    *   **Take Profit (TP):** Set 5-7 Take Profit orders.
-    *   **Stop Loss (SL):** Set a Stop Loss at 50% below the entry price.
+**Strategy Details:**
+1. **Entry:** Enter a position based on your analysis and market conditions.
+2. **Time Limit:** Set a 3-5 minute limit after entering a position. During this period, monitor the volume and transaction count.
+3. **Exit Strategy:**
+   * **Time-Based Exit:** If volume does not increase after 3 minutes, sell the position.
+   * **Growth-Based Exit:** If growth in volume appears, disable the time-based exit rule:
+     * **Take Profit (TP):** Set 5-7 Take Profit orders to secure gains.
+     * **Stop Loss (SL):** Implement a 50% Stop Loss to mitigate potential losses.
+
+*(Note: All parameters mentioned above can be customized within the environment settings.)*
+
+---
 
 ### How To Run
 1. Environment Variables Settings
@@ -83,14 +94,10 @@ src/
 PRIVATE_KEY=your_private_key_here
 RPC_HTTPS=https://mainnet.helius-rpc.com/?api-key=your_api_key_here
 RPC_WSS=wss://atlas-mainnet.helius-rpc.com/?api-key=your_api_key_here
-DEVNET_RPC_HTTPS=https://devnet.helius-rpc.com/?api-key=your_api_key_here
-RAYDIUM_LPV4=675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8
 SLIPPAGE=10
 JITO_BLOCK_ENGINE_URL=https://ny.mainnet.block-engine.jito.wtf
 JITO_TIP_STREAM_URL=ws://bundles-api-rest.jito.wtf/api/v1/bundles/tip_stream
 JITO_TIP_PERCENTILE=50
-YELLOWSTONE_RPC_HTTP=http://elite.rpc.solanavibestation.com/?api_key=your_api_key_here
-YELLOWSTONE_RPC_WSS=ws://elite.rpc.solanavibestation.com/?api_key=your_api_key_here
 JITO_TIP_VALUE=0.004
 BUY_THRESHOLD=1000
 SELL_THRESHOLD=300
