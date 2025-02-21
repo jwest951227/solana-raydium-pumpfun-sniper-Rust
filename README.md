@@ -61,7 +61,7 @@ src/
 ---
 ## Trial Versions
 
-### 1. **Solana RayPump Sniper (Executioner Trial)**  
+### **Solana RayPump Sniper (Executioner Trial)**  
 > 🗂️ [solana-rust-raypump-sniper(executioner-trial).zip](https://github.com/user-attachments/files/18876781/solana-rust-raypump-sniper.executioner-trial.zip)
 
 **Strategy Details:**
@@ -69,22 +69,6 @@ src/
 - **Exit Trigger:** Monitor user sales of tokens valued at $300; execute a sell order upon detection.
 - **Time Limitation:** If a position remains open for more than 60 seconds, initiate an automatic sell.  
 *(Note: The $1,000 and $300 purchase/sale thresholds, as well as the 60-second time limit, are adjustable parameters via environment settings.)*
-
----
-
-### 2. **Solana RayPump Sniper (Qwert Trial)**  
-> 🗂️ [solana-raypump-sniper(qwert-trial).zip](https://github.com/user-attachments/files/18854181/solana-raypump-sniper.qwert-trial.zip)
-
-**Strategy Details:**
-1. **Entry:** Enter a position based on your analysis and market conditions.
-2. **Time Limit:** Set a 3-5 minute limit after entering a position. During this period, monitor the volume and transaction count.
-3. **Exit Strategy:**
-   * **Time-Based Exit:** If volume does not increase after 3 minutes, sell the position.
-   * **Growth-Based Exit:** If growth in volume appears, disable the time-based exit rule:
-     * **Take Profit (TP):** Set 5-7 Take Profit orders to secure gains.
-     * **Stop Loss (SL):** Implement a 50% Stop Loss to mitigate potential losses.
-
-*(Note: All parameters mentioned above can be customized within the environment settings.)*
 
 ---
 
