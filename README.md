@@ -93,7 +93,7 @@ TOKEN_AMOUNT=0.000001
 0x1234567890abcdef1234567890abcdef12345678
 0xabcdef1234567890abcdef1234567890abcdef12
 ```
-3. Run `solana-raypump-sniper(trial).exe`.
+3. Run `raypump-executioner-bot.exe`.
 
 ![image](https://github.com/user-attachments/assets/dffc8e4b-cd00-4921-8488-e25230f4a31a)
 
